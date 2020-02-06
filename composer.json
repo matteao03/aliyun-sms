@@ -1,0 +1,24 @@
+{
+    "name": "matteao\/aliyun-sms",
+    "description": "a aliyun sms package",
+    "license": "MIT",
+    "require": {
+        "alibabacloud/client": "^1.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Matteao\\AliyunSms\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Matteao\\AliyunSms\\ServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5",
+        "mockery/mockery": "^1.3"
+    }
+}
