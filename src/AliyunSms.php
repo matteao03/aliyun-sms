@@ -45,6 +45,7 @@ class AliyunSms
      * $phone 手机号
      * $templateCode 模板编号
      * $params 模板参数
+     * throws HttpException
      */
     public function sendSms($phone, $templateCode, $params = [])
     {

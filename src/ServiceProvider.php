@@ -24,6 +24,8 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
                 config('services.aliyun_sms.sign_name')
             );
         });
+
+        $this->app->alias(AliyunSms::class, 'aliyunsms');
     }
 
     /**
@@ -33,6 +35,6 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
      */
     public function provides()
     {
-        return [AliyunSms::class];
+        return [AliyunSms::class, 'aliyunsms'];
     }
 }
